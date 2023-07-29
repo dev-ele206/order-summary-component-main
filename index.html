@@ -43,9 +43,22 @@
       padding: 0 60px;
     }
 
+    #plan-container {
+      padding: 0 100px;
+      background-color: red;
+      display: flex;
+      justify-content: space-between;
+    }
 
+    a {
+      margin: auto;
+    }
+
+  
+    
   </style>
 </head>
+
 <body>
 
   <div class="card-container">
@@ -56,10 +69,11 @@
         device anywhere you like!</p>
     </div>
     <div id="plan-container">
-
-     <p>Annual Plan</p>
-      $59.99/year
-      Change
+      <div id="plan-box">
+        <p>Annual Plan</p>
+        <p>$59.99/year</p>
+      </div>
+      <a href="">Change</a>
     </div>
     <button id="payment-btn">Proceed to Payment</button>
     <button id="cancel-btn">Cancel Order</button>
