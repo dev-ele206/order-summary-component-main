@@ -23,15 +23,23 @@
 
     .card-container {
       margin: auto;
-      width: 30%;
+      width: 400px;
       text-align: center;
-      background-color: white;
+      background-color: orange;
       border-radius: 10px;
+      height: 550px;
     }
 
-    img {
+    #hero-pic {
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
+      width: 100%;
+    }
+
+    #music-icon {
+      width: auto;
+      height: 60px;
+      margin: auto;
     }
 
     body {
@@ -39,11 +47,11 @@
       background-repeat: no-repeat;
     }
 
-    #text-container {
+    .text-container {
       padding: 0 60px;
     }
 
-    #plan-container {
+    .plan-container {
       padding: 0 100px;
       background-color: red;
       display: flex;
@@ -54,35 +62,48 @@
       margin: auto;
     }
 
-  
-    
+    .btn-container {
+      background-color: blue;
+      display: flex;
+      flex-direction: column;
+      margin: 0 50px;
+    }
+
+    #cancel-btn {
+      border: none;
+      background: none;
+    }
+
   </style>
 </head>
 
 <body>
 
   <div class="card-container">
-    <img src="/images/illustration-hero.svg" alt="">
-    <div id="text-container">
+    <img id="hero-pic" src="/images/illustration-hero.svg" alt="">
+    <div class="text-container">
       <h1>Order Summary</h1>
       <p>You can now listen to millions of songs, audiobooks, and podcasts on any
         device anywhere you like!</p>
     </div>
-    <div id="plan-container">
+    <div class="plan-container">
+      <img id="music-icon" src="/images/icon-music.svg" alt="">
       <div id="plan-box">
         <p>Annual Plan</p>
         <p>$59.99/year</p>
       </div>
       <a href="">Change</a>
     </div>
-    <button id="payment-btn">Proceed to Payment</button>
-    <button id="cancel-btn">Cancel Order</button>
+    <div class="btn-container">
+      <button id="payment-btn">Proceed to Payment</button>
+      <button id="cancel-btn">Cancel Order</button>
+    </div>
   </div>
 
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">dev-ele</a>.
   </div>
 </body>
 
