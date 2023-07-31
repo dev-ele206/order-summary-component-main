@@ -7,6 +7,10 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;900&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | Order summary card</title>
 
@@ -15,6 +19,7 @@
     .attribution {
       font-size: 11px;
       text-align: center;
+      margin-top: 100px;
     }
 
     .attribution a {
@@ -25,9 +30,9 @@
       margin: auto;
       width: 400px;
       text-align: center;
-      background-color: orange;
+      background-color: white;
       border-radius: 10px;
-      height: 550px;
+      height: 590px;
     }
 
     #hero-pic {
@@ -36,15 +41,33 @@
       width: 100%;
     }
 
+    h1 {
+      font-family: 'Red Hat Display', sans-serif;
+      color: hsl(223, 47%, 23%);
+    }
+
+    h4 {
+      font-family: 'Red Hat Display', sans-serif;
+      color: hsl(223, 47%, 23%);
+      margin-bottom: 0;
+    }
+
+    p {
+      font-family: 'Red Hat Display', sans-serif;
+      color: hsl(224, 23%, 55%);
+      margin-top: 0;
+    }
+
     #music-icon {
       width: auto;
-      height: 60px;
+      height: 50px;
       margin: auto;
     }
 
     body {
       background-image: url(/images/pattern-background-desktop.svg);
       background-repeat: no-repeat;
+      background-color: hsl(225, 100%, 94%);
     }
 
     .text-container {
@@ -52,10 +75,12 @@
     }
 
     .plan-container {
-      padding: 0 100px;
-      background-color: red;
+      padding: 0 30px;
+      background-color: hsl(225, 100%, 98%);
       display: flex;
       justify-content: space-between;
+      margin: 30px;
+      border-radius: 5px;
     }
 
     a {
@@ -63,15 +88,25 @@
     }
 
     .btn-container {
-      background-color: blue;
       display: flex;
       flex-direction: column;
-      margin: 0 50px;
+      margin: 30px;
+    }
+
+    #payment-btn {
+      background-color: blue;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 15px;
     }
 
     #cancel-btn {
       border: none;
       background: none;
+      font-family: 'Red Hat Display', sans-serif;
+      color: hsl(224, 23%, 55%);
+      margin: 10px;
     }
 
   </style>
@@ -89,7 +124,7 @@
     <div class="plan-container">
       <img id="music-icon" src="/images/icon-music.svg" alt="">
       <div id="plan-box">
-        <p>Annual Plan</p>
+        <h4>Annual Plan</h4>
         <p>$59.99/year</p>
       </div>
       <a href="">Change</a>
