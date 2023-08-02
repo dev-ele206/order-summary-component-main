@@ -41,19 +41,24 @@
       width: 100%;
     }
 
-    h1 {
+    h1, h4, p, a, #cancel-btn {
       font-family: 'Red Hat Display', sans-serif;
+    }
+
+    h1, h4 {
       color: hsl(223, 47%, 23%);
     }
 
+    #cancel-btn, a {
+      font-weight: bold;
+
+    }
+
     h4 {
-      font-family: 'Red Hat Display', sans-serif;
-      color: hsl(223, 47%, 23%);
       margin-bottom: 0;
     }
 
     p {
-      font-family: 'Red Hat Display', sans-serif;
       color: hsl(224, 23%, 55%);
       margin-top: 0;
     }
@@ -65,7 +70,7 @@
     }
 
     body {
-      background-image: url(/images/pattern-background-desktop.svg);
+      background-image: url(images/pattern-background-desktop.svg);
       background-repeat: no-repeat;
       background-color: hsl(225, 100%, 94%);
       background-position: center top;
@@ -101,13 +106,12 @@
       border-radius: 10px;
       padding: 15px;
       box-shadow: 0px 15px 10px -15px hsl(224, 23%, 55%);
+      font-weight: bold;
     }
 
     #cancel-btn {
       border: none;
       background: none;
-      font-family: 'Red Hat Display', sans-serif;
-      font-weight: bold;
       color: hsl(224, 23%, 55%);
       margin-top: 15px;
     }
@@ -118,7 +122,7 @@
 <body>
 
   <div class="card-container">
-    <img id="hero-pic" src="/images/illustration-hero.svg" alt="">
+    <img id="hero-pic" src="images/illustration-hero.svg" alt="">
     <div class="text-container">
       <h1>Order Summary</h1>
       <p>You can now listen to millions of songs, audiobooks, and podcasts on any
